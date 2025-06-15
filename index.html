@@ -48,6 +48,12 @@
     </script>
     
 <style>
+
+    html {
+        scroll-behavior: smooth;
+      }
+
+
     /* Animation keyframes */
     @keyframes fadeInUp {
         from {
@@ -972,9 +978,15 @@
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
                 <p>&copy; 2025 Retroviral Solution. All rights reserved.</p>
+                <p>Developed by <a href="https://durieltech.vercel.app" class="text-yellow-300" target="_blank">Duriel Tech</a>.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+<button id="backToTop" class="fixed bottom-8 right-8 p-3 bg-primary text-white rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-secondary">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
     <script>
     // Mobile menu toggle with left-slide animation
@@ -1154,6 +1166,51 @@
     observer1.observe(el);
   });
 
+
+  // Back to Top Button
+const backToTopButton = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 300) {
+    backToTopButton.classList.remove('opacity-0', 'invisible');
+    backToTopButton.classList.add('opacity-100', 'visible');
+  } else {
+    backToTopButton.classList.add('opacity-0', 'invisible');
+    backToTopButton.classList.remove('opacity-100', 'visible');
+  }
+});
+
+backToTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// Enhanced Smooth Scrolling for all anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    const targetId = this.getAttribute('href');
+    if (targetId === '#') return;
+    
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+      
+      // Update URL without jumping
+      history.pushState(null, null, targetId);
+    }
+  });
+});
+
     </script>
+
+
+    
 </body>
 </html>

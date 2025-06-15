@@ -159,12 +159,12 @@
   }
   
   /* Count-up animation */
-  .animate-count-up {
+  /*.animate-count-up {
     counter-reset: num var(--num);
   }
   .animate-count-up::after {
     content: counter(num);
-  }
+  }*/
 
    /* Custom Animations */
    @keyframes float-slow {
@@ -1132,7 +1132,7 @@
         counter.innerText = Math.ceil(count + increment);
         setTimeout(animateCountUp, 1);
       } else {
-        counter.innerText = target.toLocaleString();
+        counter.innerText = target;
       }
     });
   }

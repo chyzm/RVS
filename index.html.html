@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retroviral Solutions | Strengthening ARV Access Across Africa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E40AF',  // Deep blue (brand color)
+                        secondary: '#3B82F6',  // Lighter blue
+                        accent: '#10B981',  // Green for positive actions
+                    },
+                    keyframes: {
+                        'fade-in': {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        'fade-in-up': {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        'fade-in-right': {
+                            '0%': { opacity: '0', transform: 'translateX(-10px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fade-in 0.5s ease-out forwards',
+                        'fade-in-up': 'fade-in-up 0.5s ease-out forwards',
+                        'fade-in-right': 'fade-in-right 0.3s ease-out forwards',
+                    }
+                }
+            }
+        }
+
+
+
+
+
+        
+    </script>
+    
+<style>
+    /* Animation keyframes */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+    
+    @keyframes glow {
+        0%, 100% {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+        }
+        50% {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+    }
+    
+    /* Animation classes */
+    .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+        opacity: 0;
+    }
+    
+    .animation-delay-200 {
+        animation-delay: 0.2s;
+    }
+    
+    .animation-delay-400 {
+        animation-delay: 0.4s;
+    }
+    
+    .animate-float {
+        animation: float 6s ease-in-out infinite;
+    }
+    
+    .hover-shadow-glow:hover {
+        animation: glow 2s ease-in-out infinite;
+    }
+    
+    .animate-pulse {
+        animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    
+    .animate-ping {
+        animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+
+     /* Custom animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  @keyframes underline-expand {
+    0% { width: 0; opacity: 0; }
+    100% { width: 100%; opacity: 1; }
+  }
+  @keyframes progress-grow {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+  @keyframes pulse-slow {
+    0%, 100% { transform: scale(1); opacity: 0.1; }
+    50% { transform: scale(1.05); opacity: 0.15; }
+  }
+  
+  /* Animation classes */
+  .animate-float {
+    animation: float 8s ease-in-out infinite;
+  }
+  .animate-float-slow {
+    animation: float-slow 10s ease-in-out infinite;
+  }
+  .animate-underline-expand {
+    animation: underline-expand 1.5s ease-out forwards;
+  }
+  .animate-progress-grow {
+    animation: progress-grow 1.5s ease-out forwards;
+  }
+  .animate-pulse-slow {
+    animation: pulse-slow 6s ease-in-out infinite;
+  }
+  .highlight-text {
+    background-image: linear-gradient(120deg, #3B82F6 0%, #10B981 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    background-position: 0 90%;
+    transition: background-size 0.3s ease;
+  }
+  .highlight-text:hover {
+    background-size: 100% 100%;
+  }
+  
+  /* Count-up animation */
+  .animate-count-up {
+    counter-reset: num var(--num);
+  }
+  .animate-count-up::after {
+    content: counter(num);
+  }
+
+   /* Custom Animations */
+   @keyframes float-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+@keyframes underline-expand {
+    0% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+}
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.1); }
+}
+@keyframes bounce-horizontal {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(6px); }
+}
+
+/* Animation Classes */
+.animate-float-slow {
+    animation: float-slow 6s ease-in-out infinite;
+}
+.animate-underline-expand {
+    animation: underline-expand 1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+.animate-pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+.animate-bounce-horizontal {
+    animation: bounce-horizontal 3s ease-in-out infinite;
+}
+.highlight-text {
+    background-image: linear-gradient(120deg, #3B82F6 0%, #10B981 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    background-position: 0 90%;
+    transition: background-size 0.3s ease;
+}
+.highlight-text:hover {
+    background-size: 100% 100%;
+}
+</style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+
+    <header class="bg-white text-primary shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 py-2 flex justify-between items-center">
+            <!-- Logo with animation -->
+            <a href="/" class="flex items-center space-x-2 hover:scale-105 transition-transform duration-300">
+                <img src="/img/logo-1.png" class="w-16 h-16 sm:w-20 sm:h-20 transition-all duration-500 hover:rotate-6" alt="Logo">
+                <p class="text-xl sm:text-2xl font-bold tracking-wide font-sans text-gray-800 uppercase transform hover:translate-x-1 transition-transform duration-300">
+                    Retroviral Solutions
+                </p>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="/" class="relative group hover:text-secondary transition-colors duration-300">
+                    Home
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#about" class="relative group hover:text-secondary transition-colors duration-300">
+                    About
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#services" class="relative group hover:text-secondary transition-colors duration-300">
+                    Services
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#blog" class="relative group hover:text-secondary transition-colors duration-300">
+                    Blog
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#partners" class="relative group hover:text-secondary transition-colors duration-300">
+                    Partners
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#faq" class="relative group hover:text-secondary transition-colors duration-300">
+                    FAQ
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#" onclick="openModal('contactModal')" class="relative group hover:text-secondary transition-colors duration-300">
+                    Contact
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuButton" class="md:hidden text-2xl text-primary focus:outline-none transform transition-transform duration-300 hover:scale-110">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu - Now sliding from left -->
+        <div id="mobileMenu" class="md:hidden fixed inset-y-0 left-0 w-64 bg-white shadow-xl transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <div class="container mx-auto px-4 py-6 flex flex-col space-y-4 h-full">
+                <!-- Close Button -->
+                <div class="flex justify-end">
+                    <button id="mobileMenuClose" class="text-2xl text-gray-500 hover:text-primary">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <!-- Menu Items -->
+                <a href="/" class="py-3 px-4 hover:bg-gray-50 rounded-lg transition-all duration-300 flex items-center">
+                    <i class="fas fa-home mr-3 text-secondary w-5 text-center"></i> 
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="py-3 px-4 hover:bg-gray-50 rounded-lg transition-all duration-300 flex items-center">
+                    <i class="fas fa-info-circle mr-3 text-secondary w-5 text-center"></i> 
+                    <span>About</span>
+                </a>
+                <a href="#services" class="py-3 px-4 hover:bg-gray-50 rounded-lg transition-all duration-300 flex items-center">
+                    <i class="fas fa-pills mr-3 text-secondary w-5 text-center"></i> 
+                    <span>Services</span>
+                </a>
+                <a href="#blog" class="py-3 px-4 hover:bg-gray-50 rounded-lg transition-all duration-300 flex items-center">
+                    <i class="fas fa-newspaper mr-3 text-secondary w-5 text-center"></i> 
+                    <span>Blog</span>
+                </a>
+                <a href="#partners" class="py-3 px-4 hover:bg-gray-50 rounded-lg transition-all duration-300 flex items-center">
+                    <i class="fas fa-handshake mr-3 text-secondary w-5 text-center"></i> 
+                    <span>Partners</span>
+                </a>
+                <a href="#faq" class="py-3 px-4 hover:bg-gray-50 rounded-lg transition-all duration-300 flex items-center">
+                    <i class="fas fa-question-circle mr-3 text-secondary w-5 text-center"></i> 
+                    <span>FAQ</span>
+                </a>
+                <a href="#" onclick="openModal('contactModal')" class="py-3 px-4 hover:bg-gray-50 rounded-lg transition-all duration-300 flex items-center">
+                    <i class="fas fa-envelope mr-3 text-secondary w-5 text-center"></i> 
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Overlay (hidden by default) -->
+        <div id="mobileMenuOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+    </header>
+
+<!-- Hero Section with Image and Animations -->
+<section class="relative bg-gradient-to-r from-primary to-secondary text-white overflow-hidden">
+    <!-- Animated background elements -->
+    <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full">
+            <div class="absolute top-20 left-20 w-32 h-32 bg-white bg-opacity-10 rounded-full animate-pulse animation-delay-1000"></div>
+            <div class="absolute bottom-10 right-20 w-40 h-40 bg-white bg-opacity-5 rounded-full animate-pulse animation-delay-500"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-24 bg-white bg-opacity-15 rounded-full animate-ping animation-delay-1500"></div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-6 py-24 flex flex-col md:flex-row items-center relative z-10">
+        <!-- Text content with animations -->
+        <div class="md:w-1/2 text-center md:text-left mb-12 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight animate-fade-in-up">
+                Strengthening Access to Life-Saving ARV Medications
+            </h1>
+            <p class="text-xl mb-8 max-w-2xl animate-fade-in-up animation-delay-200">
+                Restoring and strengthening reliable supply chains for antiretroviral treatments across Nigeria and Africa.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in-up animation-delay-400">
+                <a href="#contact" class="bg-accent hover:bg-green-600 text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-lg transform hover:scale-105">
+                    Partner With Us
+                </a>
+                <a href="#services" class="bg-white hover:bg-gray-100 text-primary px-8 py-3 rounded-lg font-semibold transition-all shadow-lg transform hover:scale-105">
+                    Our Services
+                </a>
+            </div>
+        </div>
+        
+        <!-- Image with animation -->
+        <div class="md:w-1/2 flex justify-center animate-float">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                 alt="Healthcare professional with medication"
+                 class="rounded-lg shadow-2xl max-h-96 object-cover border-4 border-white hover:shadow-glow transition-all duration-500">
+        </div>
+    </div>
+</section>
+
+
+<!-- About Us Section -->
+<section id="about" class="py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <!-- Animated Background Elements -->
+    <div class="absolute left-0 top-1/3 w-32 h-32 bg-primary rounded-full filter blur-3xl opacity-10 animate-float-slow"></div>
+    <div class="absolute right-0 top-2/4 w-40 h-40 bg-secondary rounded-full filter blur-3xl opacity-5 animate-float"></div>
+  
+    <div class="container mx-auto px-6 relative">
+      <!-- Section Header with Decorative Elements -->
+      <div class="text-center mb-16 animate-fade-in">
+        <span class="inline-block text-secondary font-semibold tracking-widest text-sm mb-3">BRIDGING THE TREATMENT GAP</span>
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 relative inline-block">
+          <span class="relative">
+            Access to ARV Medications
+            <span class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent animate-underline-expand"></span>
+          </span>
+        </h2>
+        <div class="max-w-2xl mx-auto">
+          <p class=" mt-4 text-xl text-gray-600 font-light leading-relaxed animate-fade-in-up animate-delay-100">
+            Where <span class="font-medium text-primary">innovation</span> meets <span class="font-medium text-secondary">compassion</span> in Nigeia's HIV treatment landscape
+          </p>
+          
+            <p class="text-lg text-gray-700 font-light leading-relaxed animate-fade-in-up animate-delay-100">
+                "Where USAID's funding stopped, we built <span class="font-semibold text-primary">local capacity</span> that continues growing. Today our Nigerian-managed supply chain delivers <span class="font-semibold text-secondary">more reliably</span> than the donor-dependent system ever did."
+              </p>
+              <p class="mt-2 text-gray-600 font-medium">
+                <br><strong>— Dr Pharm Bunie E. Mbamalu, RVS Founder & CEO</strong>
+              </p>
+        </div>
+      </div>
+
+   
+
+      
+  
+      <!-- Mission Content with Floating Animation -->
+      <div class="flex flex-col lg:flex-row items-center gap-12 mb-24">
+        <div class="lg:w-1/2 animate-fade-in-slow">
+          <div class="relative">
+            <!-- Decorative Quote Mark -->
+            <div class="absolute -top-8 -left-8 text-primary opacity-10 text-9xl font-serif">“</div>
+            
+            <p class="text-2xl md:text-3xl font-light text-gray-800 leading-relaxed mb-8 relative z-10">
+              <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary font-medium">Retroviral Solutions</span> was born from an urgent need to 
+              <span class="highlight-text">transform broken supply chains</span> into 
+              <span class="highlight-text">lifelines of hope</span> across Nigeria.
+            </p>
+            
+            <div class="space-y-6 pl-6 border-l-4 border-primary border-opacity-30">
+              <div class="flex items-start group">
+                <div class="bg-primary text-white p-3 rounded-full mr-4 mt-1 transform group-hover:rotate-12 transition-transform duration-500">
+                  <i class="fas fa-bolt text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-xl text-gray-800 mb-1 group-hover:text-primary transition-colors duration-300">Rapid Response</h3>
+                  <p class="text-gray-600 font-light">Emergency stock deployment within <span class="font-medium text-accent">72 hours</span> of shortage alerts</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start group">
+                <div class="bg-primary text-white p-3 rounded-full mr-4 mt-1 transform group-hover:rotate-12 transition-transform duration-500">
+                  <i class="fas fa-chess-knight text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-xl text-gray-800 mb-1 group-hover:text-primary transition-colors duration-300">Strategic Reach</h3>
+                  <p class="text-gray-600 font-light">Last-mile networks covering <span class="font-medium text-accent">92%</span> of Nigeria's treatment centers</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start group">
+                <div class="bg-primary text-white p-3 rounded-full mr-4 mt-1 transform group-hover:rotate-12 transition-transform duration-500">
+                  <i class="fas fa-shield-virus text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-xl text-gray-800 mb-1 group-hover:text-primary transition-colors duration-300">Quality Shield</h3>
+                  <p class="text-gray-600 font-light">Every batch <span class="font-medium text-accent">triple-verified</span> for potency and safety</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Animated Infographic -->
+        <div class="lg:w-1/2 relative animate-float-slow">
+          <div class="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100 transform hover:scale-[1.02] transition-transform duration-500">
+            <div class="p-1 bg-gradient-to-r from-primary to-secondary"></div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Our Treatment Lifeline</span>
+              </h3>
+              
+              <div class="space-y-8">
+                <!-- Animated Progress Bar 1 -->
+                <div>
+                  <div class="flex justify-between mb-2">
+                    <span class="font-medium text-gray-700">Supply Chain Efficiency</span>
+                    <span class="font-bold text-primary">99.7%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div class="bg-gradient-to-r from-primary to-secondary h-3 rounded-full animate-progress-grow" style="width: 99.7%"></div>
+                  </div>
+                </div>
+                
+                <!-- Animated Progress Bar 2 -->
+                <div>
+                  <div class="flex justify-between mb-2">
+                    <span class="font-medium text-gray-700">Rural Coverage</span>
+                    <span class="font-bold text-secondary">87%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div class="bg-gradient-to-r from-secondary to-accent h-3 rounded-full animate-progress-grow animate-delay-200" style="width: 87%"></div>
+                  </div>
+                </div>
+                
+                <!-- Animated Counter -->
+                <div class="grid grid-cols-3 gap-4 text-center">
+                  <div class="p-4 bg-gray-50 rounded-xl">
+                    <div class="text-4xl font-bold text-primary mb-2 animate-count-up" data-target="10000">0</div>
+                    <div class="text-sm text-gray-600">Patients Monthly</div>
+                  </div>
+                  <div class="p-4 bg-gray-50 rounded-xl">
+                    <div class="text-4xl font-bold text-secondary mb-2 animate-count-up animate-delay-200" data-target="200">0</div>
+                    <div class="text-sm text-gray-600">Partner Clinics</div>
+                  </div>
+                  <div class="p-4 bg-gray-50 rounded-xl">
+                    <div class="text-4xl font-bold text-accent mb-2 animate-count-up animate-delay-400" data-target="36">0</div>
+                    <div class="text-sm text-gray-600">States Covered</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Floating decorative element -->
+          <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-accent rounded-full opacity-10 -z-10 animate-pulse-slow"></div>
+        </div>
+      </div>
+  
+      <!-- Founding Story with Timeline -->
+      <div class="bg-white rounded-3xl shadow-xl overflow-hidden animate-fade-in-up animate-delay-300">
+        <div class="md:flex">
+          <!-- Image Section -->
+          <div class="md:w-2/5 relative min-h-64 md:min-h-full bg-gradient-to-br from-primary to-secondary">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center mix-blend-overlay opacity-30"></div>
+            <div class="relative z-10 p-10 h-full flex flex-col justify-center text-white">
+              <h3 class="text-3xl font-bold mb-4">Our Story</h3>
+              <p class="text-lg font-light opacity-90">From crisis to sustainable solution</p>
+              <div class="mt-6">
+                <span class="inline-block px-4 py-2 bg-white bg-opacity-20 rounded-full backdrop-blur-sm border border-white border-opacity-30">
+                  2024 Foundation
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Timeline Section -->
+          <div class="md:w-3/5 p-10">
+            <div class="space-y-8 relative before:absolute before:top-0 before:bottom-0 before:left-8 before:w-1 before:bg-gradient-to-b from-primary to-accent">
+              <!-- Timeline Item 1 -->
+              <div class="relative pl-12 group animate-fade-in-right animate-delay-400">
+                <div class="absolute left-0 w-6 h-6 rounded-full bg-primary border-4 border-white top-1 transform group-hover:scale-125 transition-transform duration-300"></div>
+                <h4 class="text-xl font-bold text-gray-800 mb-2">The Crisis Point</h4>
+                <p class="text-gray-600 font-light">As USAID's PEPFAR program scaled back funding in 2024, 1.2 million Nigerian patients faced immediate ARV shortages. </p>
+              </div>
+              
+              <!-- Timeline Item 2 -->
+              <div class="relative pl-12 group animate-fade-in-right animate-delay-500">
+                <div class="absolute left-0 w-6 h-6 rounded-full bg-secondary border-4 border-white top-1 transform group-hover:scale-125 transition-transform duration-300"></div>
+                <h4 class="text-xl font-bold text-gray-800 mb-2">First Solutions</h4>
+                <p class="text-gray-600 font-light">We engaged healthcare providers to gain a deep understanding of the data directly from their databases. With those insights, we partnered with pharmaceutical manufacturers to produce effective and affordable antiretroviral (ARV) medications.</p>
+              </div>
+              
+              <!-- Timeline Item 3 -->
+              <div class="relative pl-12 group animate-fade-in-right animate-delay-600">
+                <div class="absolute left-0 w-6 h-6 rounded-full bg-accent border-4 border-white top-1 transform group-hover:scale-125 transition-transform duration-300"></div>
+                <h4 class="text-xl font-bold text-gray-800 mb-2">Tech Transformation</h4>
+                <p class="text-gray-600 font-light">Launched predictive inventory system reducing stockouts by 91%</p>
+              </div>
+              
+              <!-- Timeline Item 4 -->
+              <div class="relative pl-12 group animate-fade-in-right animate-delay-700">
+                <div class="absolute left-0 w-6 h-6 rounded-full bg-primary border-4 border-white top-1 transform group-hover:scale-125 transition-transform duration-300"></div>
+                <h4 class="text-xl font-bold text-gray-800 mb-2">Today's Network</h4>
+                <p class="text-gray-600 font-light">Poised to become Nigeria's most reliable ARV distributor targeting 99.7% on-time delivery</p>
+              </div>
+            
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div>
+        
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  
+
+
+
+<!-- Mission & Vision Section -->
+<section class="py-16 bg-white overflow-hidden">
+    <div class="container mx-auto px-6">
+        <!-- Animated Header -->
+        <div class="text-center mb-16 animate-fade-in">
+            <h2 class="text-3xl font-bold text-primary mb-4 transform transition-all duration-500 hover:scale-105">
+                <span class="relative inline-block">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Pioneering Health Access</span>
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary to-accent animate-underline-expand"></span>
+                </span>
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto transition-all duration-300 hover:text-gray-800">
+                Where innovation meets compassion in Africa's HIV treatment revolution
+            </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- Mission Card with Floating Animation -->
+            <div class="flex-1 bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl border border-gray-100 transform transition-all duration-500 hover:-translate-y-2 animate-float-slow">
+                <div class="flex items-center mb-6 group">
+                    <div class="bg-primary text-white p-4 rounded-full mr-5 transform group-hover:rotate-12 transition duration-500">
+                        <i class="fas fa-bullseye text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary group-hover:text-secondary transition-colors duration-300">Our Mission</h3>
+                </div>
+                <p class="text-gray-700 relative pl-4 border-l-4 border-primary border-opacity-30">
+                    <span class="absolute -left-1 top-0 w-3 h-3 bg-primary rounded-full animate-pulse"></span>
+                    To ensure <span class="highlight-text">timely, affordable access</span> to WHO-approved antiretrovirals across Nigeria's evolving HIV treatment landscape through <span class="highlight-text">tech-driven distribution</span>.
+                </p>
+                <div class="mt-6 flex justify-end">
+                    <span class="inline-block px-3 py-1 bg-primary bg-opacity-10 text-primary rounded-full text-sm font-medium animate-bounce-horizontal">
+                        Precision Delivery
+                    </span>
+                </div>
+            </div>
+
+            <!-- Vision Card with Floating Animation -->
+            <div class="flex-1 bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl border border-gray-100 transform transition-all duration-500 hover:-translate-y-2 animate-float-slow animate-delay-200">
+                <div class="flex items-center mb-6 group">
+                    <div class="bg-secondary text-white p-4 rounded-full mr-5 transform group-hover:rotate-12 transition duration-500">
+                        <i class="fas fa-eye text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary group-hover:text-secondary transition-colors duration-300">Our Vision</h3>
+                </div>
+                <p class="text-gray-700 relative pl-4 border-l-4 border-secondary border-opacity-30">
+                    <span class="absolute -left-1 top-0 w-3 h-3 bg-secondary rounded-full animate-pulse animate-delay-1s"></span>
+                    To become Africa's <span class="highlight-text">gold standard</span> for resilient pharmaceutical logistics, transforming <span class="highlight-text">underserved markets</span> through AI-powered supply chains and last-mile innovation.
+                </p>
+                <div class="mt-6 flex justify-end">
+                    <span class="inline-block px-3 py-1 bg-secondary bg-opacity-10 text-secondary rounded-full text-sm font-medium animate-bounce-horizontal animate-delay-200">
+                        Future-Ready
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Services -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4 text-primary">Our Specialized Services</h2>
+            <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                Precision logistics and distribution solutions tailored for HIV treatment programs
+            </p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition hover:-translate-y-2">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-pills text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">ARV Supply Chain Solutions</h3>
+                    <p class="text-gray-600">
+                        End-to-end distribution of WHO-prequalified antiretrovirals to clinics, pharmacies, and care centers across Nigeria.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition hover:-translate-y-2">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-truck-medical text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Last-Mile Delivery</h3>
+                    <p class="text-gray-600">
+                        Reliable last-mile distribution network ensuring medications reach even the most remote treatment centers.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition hover:-translate-y-2">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-laptop-medical text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Inventory Management</h3>
+                    <p class="text-gray-600">
+                        Real-time tracking and predictive analytics to prevent stockouts and optimize supply chains.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<!-- FAQ Section -->
+<section id="faq" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-4 text-primary animate-fade-in">
+            Frequently Asked Questions
+        </h2>
+        <p class="text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto animate-fade-in animate-delay-100">
+            Find answers to common questions about our services and partnership opportunities.
+        </p>
+        
+        <div class="max-w-3xl mx-auto space-y-4">
+            <!-- FAQ Item 1 -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md animate-fade-in-up animate-delay-200">
+                <button class="faq-toggle w-full flex justify-between items-center p-6 text-left bg-gray-50 hover:bg-gray-100 transition-all duration-300 group">
+                    <h3 class="text-lg font-semibold text-primary group-hover:text-secondary transition-colors duration-300">
+                        What services does Retroviral Solutions provide?
+                    </h3>
+                    <i class="fas fa-chevron-down text-primary transform transition-transform duration-300 group-hover:text-secondary"></i>
+                </button>
+                <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-2">
+                        <p class="text-gray-700">
+                            Retroviral Solutions specializes in the distribution of antiretroviral (ARV) medications and healthcare logistics. Our services include:
+                        </p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+                            <li class="animate-fade-in-right animate-delay-100">End-to-end ARV supply chain management</li>
+                            <li class="animate-fade-in-right animate-delay-150">Last-mile delivery to healthcare facilities</li>
+                            <li class="animate-fade-in-right animate-delay-200">Inventory management and stock monitoring</li>
+                            <li class="animate-fade-in-right animate-delay-250">Emergency medication supply solutions</li>
+                            <li class="animate-fade-in-right animate-delay-300">Technology-driven logistics optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 2 -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md animate-fade-in-up animate-delay-300">
+                <button class="faq-toggle w-full flex justify-between items-center p-6 text-left bg-gray-50 hover:bg-gray-100 transition-all duration-300 group">
+                    <h3 class="text-lg font-semibold text-primary group-hover:text-secondary transition-colors duration-300">
+                        Which regions in Nigeria do you serve?
+                    </h3>
+                    <i class="fas fa-chevron-down text-primary transform transition-transform duration-300 group-hover:text-secondary"></i>
+                </button>
+                <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-2">
+                        <p class="text-gray-700">
+                            We currently operate across all 36 states in Nigeria, with particular focus on underserved regions. Our distribution network includes:
+                        </p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+                            <li class="animate-fade-in-right animate-delay-100">Major urban centers (Lagos, Abuja, Port Harcourt, etc.)</li>
+                            <li class="animate-fade-in-right animate-delay-150">Secondary cities and towns</li>
+                            <li class="animate-fade-in-right animate-delay-200">Rural healthcare facilities through our last-mile partners</li>
+                            <li class="animate-fade-in-right animate-delay-250">Special outreach programs for conflict-affected areas</li>
+                        </ul>
+                        <p class="mt-3 text-gray-700 animate-fade-in animate-delay-300">
+                            We're continuously expanding our reach to ensure nationwide coverage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 3 -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md animate-fade-in-up animate-delay-400">
+                <button class="faq-toggle w-full flex justify-between items-center p-6 text-left bg-gray-50 hover:bg-gray-100 transition-all duration-300 group">
+                    <h3 class="text-lg font-semibold text-primary group-hover:text-secondary transition-colors duration-300">
+                        How can healthcare facilities partner with you?
+                    </h3>
+                    <i class="fas fa-chevron-down text-primary transform transition-transform duration-300 group-hover:text-secondary"></i>
+                </button>
+                <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-2">
+                        <p class="text-gray-700">
+                            Healthcare facilities can partner with us through several channels:
+                        </p>
+                        <ol class="list-decimal pl-5 mt-2 space-y-2 text-gray-700">
+                            <li class="animate-fade-in-right animate-delay-100">
+                                <strong>Direct Supply Agreement:</strong> Register your facility to receive regular ARV supplies
+                            </li>
+                            <li class="animate-fade-in-right animate-delay-150">
+                                <strong>Emergency Stock Program:</strong> Access our emergency medication reserve during shortages
+                            </li>
+                            <li class="animate-fade-in-right animate-delay-200">
+                                <strong>Technology Integration:</strong> Connect your inventory systems with our monitoring platform
+                            </li>
+                            <li class="animate-fade-in-right animate-delay-250">
+                                <strong>Training Partnership:</strong> Participate in our healthcare provider training programs
+                            </li>
+                        </ol>
+                        <p class="mt-3 text-gray-700 animate-fade-in animate-delay-300">
+                            <a href="#" onclick="openModal('partnerModal')" class="text-accent hover:underline font-medium">Click here</a> to submit a partnership request.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 4 -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md animate-fade-in-up animate-delay-500">
+                <button class="faq-toggle w-full flex justify-between items-center p-6 text-left bg-gray-50 hover:bg-gray-100 transition-all duration-300 group">
+                    <h3 class="text-lg font-semibold text-primary group-hover:text-secondary transition-colors duration-300">
+                        What quality standards do your medications meet?
+                    </h3>
+                    <i class="fas fa-chevron-down text-primary transform transition-transform duration-300 group-hover:text-secondary"></i>
+                </button>
+                <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-2">
+                        <p class="text-gray-700">
+                            All medications distributed by Retroviral Solutions meet the highest international quality standards:
+                        </p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+                            <li class="animate-fade-in-right animate-delay-100">WHO prequalified or FDA-approved formulations</li>
+                            <li class="animate-fade-in-right animate-delay-150">Sourced from certified manufacturers with GMP compliance</li>
+                            <li class="animate-fade-in-right animate-delay-200">Stringent cold chain management where required</li>
+                            <li class="animate-fade-in-right animate-delay-250">Batch-level traceability throughout our supply chain</li>
+                            <li class="animate-fade-in-right animate-delay-300">Regular quality control testing</li>
+                        </ul>
+                        <p class="mt-3 text-gray-700 animate-fade-in animate-delay-350">
+                            We maintain full documentation for all products and welcome quality audits from partner organizations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Item 5 -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-md animate-fade-in-up animate-delay-600">
+                <button class="faq-toggle w-full flex justify-between items-center p-6 text-left bg-gray-50 hover:bg-gray-100 transition-all duration-300 group">
+                    <h3 class="text-lg font-semibold text-primary group-hover:text-secondary transition-colors duration-300">
+                        How do you ensure medication availability during shortages?
+                    </h3>
+                    <i class="fas fa-chevron-down text-primary transform transition-transform duration-300 group-hover:text-secondary"></i>
+                </button>
+                <div class="faq-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                    <div class="px-6 pb-6 pt-2">
+                        <p class="text-gray-700">
+                            Our multi-layered approach to prevent stockouts includes:
+                        </p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+                            <li class="animate-fade-in-right animate-delay-100">Strategic buffer stock at regional hubs</li>
+                            <li class="animate-fade-in-right animate-delay-150">Diversified supplier network across multiple manufacturers</li>
+                            <li class="animate-fade-in-right animate-delay-200">Real-time inventory monitoring across all partner facilities</li>
+                            <li class="animate-fade-in-right animate-delay-250">Predictive analytics to anticipate demand surges</li>
+                            <li class="animate-fade-in-right animate-delay-300">Emergency redistribution protocols</li>
+                        </ul>
+                        <p class="mt-3 text-gray-700 animate-fade-in animate-delay-350">
+                            During the 2022 global ARV shortage, we maintained 98% availability for our partner facilities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12 animate-fade-in animate-delay-700">
+            <p class="text-gray-600 mb-4">Didn't find what you were looking for?</p>
+            <a href="#" onclick="openModal('contactModal')" class="inline-block bg-primary hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
+                Ask Your Question
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Modal Backdrop (hidden by default) -->
+    <div id="modalBackdrop" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden"></div>
+
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold text-primary">Contact Us</h3>
+                    <button onclick="closeModal('contactModal')" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <form id="contactForm" class="space-y-4">
+                    <div>
+                        <label for="contactName" class="block text-gray-700 mb-1">Full Name</label>
+                        <input type="text" id="contactName" name="name" required 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="contactEmail" class="block text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="contactEmail" name="email" required 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="contactPhone" class="block text-gray-700 mb-1">Phone Number</label>
+                        <input type="tel" id="contactPhone" name="phone" 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="contactMessage" class="block text-gray-700 mb-1">Your Message</label>
+                        <textarea id="contactMessage" name="message" rows="4" required 
+                                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-accent hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Partner Form Modal -->
+    <div id="partnerModal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold text-primary">Become a Partner</h3>
+                    <button onclick="closeModal('partnerModal')" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <form id="partnerForm" class="space-y-4">
+                    <div>
+                        <label for="partnerOrg" class="block text-gray-700 mb-1">Organization Name</label>
+                        <input type="text" id="partnerOrg" name="organization" required 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="partnerContact" class="block text-gray-700 mb-1">Contact Person</label>
+                        <input type="text" id="partnerContact" name="contact_person" required 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="partnerEmail" class="block text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="partnerEmail" name="email" required 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="partnerPhone" class="block text-gray-700 mb-1">Phone Number</label>
+                        <input type="tel" id="partnerPhone" name="phone" required 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="partnerType" class="block text-gray-700 mb-1">Partnership Type</label>
+                        <select id="partnerType" name="partnership_type" required 
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option value="">Select partnership type</option>
+                            <option value="healthcare">Healthcare Provider</option>
+                            <option value="logistics">Logistics Partner</option>
+                            <option value="corporate">Corporate Sponsor</option>
+                            <option value="ngo">NGO/Non-profit</option>
+                            <option value="government">Government Agency</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="partnerDetails" class="block text-gray-700 mb-1">Partnership Details</label>
+                        <textarea id="partnerDetails" name="details" rows="4" required 
+                                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-accent hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition">
+                        Submit Partnership Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section with form triggers -->
+    <section class="py-16 bg-secondary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Become Part of the Solution</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Partner with RVS to strengthen Africa's healthcare supply chains and ensure uninterrupted access to life-saving treatments.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" onclick="openModal('contactModal')" class="bg-white hover:bg-gray-100 text-primary px-8 py-3 rounded-lg font-semibold transition shadow-lg">
+                    Contact Us
+                </a>
+                <a href="#" onclick="openModal('partnerModal')" class="bg-primary hover:bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold transition shadow-lg">
+                    Become a Partner
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="/img/logo-1.png" class="w-16 h-16 mr-2" alt="Retroviral Solutions Logo">
+                        <h3 class="text-xl font-bold">Retroviral Solutions</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Restoring reliable access to antiretroviral medications across Nigeria through innovative logistics solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Our Services</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#partners" class="text-gray-400 hover:text-white transition">Our Partners</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Lagos, Nigeria (Headquarters)</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i> +234 800 000 0000</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2"></i> info@retroviralsolutions.org</p>
+                    <p class="text-gray-400"><i class="fas fa-clock mr-2"></i> Mon-Fri: 8AM - 5PM WAT</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Retroviral Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Mobile menu toggle with left-slide animation
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileMenuClose = document.getElementById('mobileMenuClose');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+    
+    function openMobileMenu() {
+        mobileMenuOverlay.classList.remove('hidden');
+        mobileMenu.classList.remove('-translate-x-full');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMobileMenu() {
+        mobileMenu.classList.add('-translate-x-full');
+        mobileMenuOverlay.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+        
+        // Wait for animation to complete before hiding overlay
+        setTimeout(() => {
+            mobileMenuOverlay.classList.add('hidden');
+        }, 300);
+    }
+    
+    // Open menu when hamburger is clicked
+    mobileMenuButton.addEventListener('click', openMobileMenu);
+    
+    // Close menu when X is clicked
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
+    
+    // Close menu when overlay is clicked
+    mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+    
+    // Close menu when a link is clicked
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+    });
+    
+    // Close menu when ESC key is pressed
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !mobileMenu.classList.contains('-translate-x-full')) {
+            closeMobileMenu();
+        }
+    });
+
+
+
+        // Modal control functions
+        function openModal(modalId) {
+            document.getElementById('modalBackdrop').classList.remove('hidden');
+            document.getElementById(modalId).classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById('modalBackdrop').classList.add('hidden');
+            document.getElementById(modalId).classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking on backdrop
+        document.getElementById('modalBackdrop').addEventListener('click', function() {
+            document.querySelectorAll('[id$="Modal"]').forEach(modal => {
+                modal.classList.add('hidden');
+            });
+            this.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Form submission handlers
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically send the form data to your server
+            alert('Thank you for your message! We will contact you soon.');
+            closeModal('contactModal');
+            this.reset();
+        });
+
+        document.getElementById('partnerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically send the form data to your server
+            alert('Thank you for your partnership request! We will review it and get back to you.');
+            closeModal('partnerModal');
+            this.reset();
+        });
+
+
+         // FAQ toggle functionality
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            // Toggle content visibility
+            content.classList.toggle('hidden');
+            
+            // Rotate icon
+            icon.classList.toggle('rotate-180');
+            
+            // Close other open FAQs
+            document.querySelectorAll('.faq-content').forEach(item => {
+                if (item !== content && !item.classList.contains('hidden')) {
+                    item.classList.add('hidden');
+                    item.previousElementSibling.querySelector('i').classList.remove('rotate-180');
+                }
+            });
+        });
+    });
+    
+    // Make sure the openModal function is available (from previous modal implementation)
+    function openModal(modalId) {
+        document.getElementById('modalBackdrop').classList.remove('hidden');
+        document.getElementById(modalId).classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }   
+    
+    
+    
+   
+    // FAQ toggle functionality with animations
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            // Toggle content visibility with animation
+            if (content.classList.contains('max-h-0')) {
+                content.classList.remove('max-h-0');
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.classList.add('rotate-180');
+            } else {
+                content.style.maxHeight = '0';
+                icon.classList.remove('rotate-180');
+                
+                // Reset max-height after transition completes
+                setTimeout(() => {
+                    content.classList.add('max-h-0');
+                }, 500);
+            }
+            
+            // Close other open FAQs
+            document.querySelectorAll('.faq-content').forEach(item => {
+                if (item !== content && !item.classList.contains('max-h-0')) {
+                    item.style.maxHeight = '0';
+                    item.previousElementSibling.querySelector('i').classList.remove('rotate-180');
+                    
+                    setTimeout(() => {
+                        item.classList.add('max-h-0');
+                    }, 500);
+                }
+            });
+        });
+    });
+
+
+
+
+
+    // Initialize animations on scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add(entry.target.dataset.animation);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('[class*="animate-"]').forEach(el => {
+        const animationClass = Array.from(el.classList).find(c => c.startsWith('animate-'));
+        if (animationClass) {
+            el.dataset.animation = animationClass;
+            el.classList.remove(animationClass);
+            observer.observe(el);
+        }
+    });
+
+    // Initialize count-up animations
+  function animateCountUp() {
+    const counters = document.querySelectorAll('.animate-count-up');
+    const speed = 200;
+    
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const increment = target / speed;
+      
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(animateCountUp, 1);
+      } else {
+        counter.innerText = target.toLocaleString();
+      }
+    });
+  }
+  
+  // Trigger animations when element is in view
+  const observer1 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add(entry.target.dataset.animation);
+        if (entry.target.classList.contains('animate-count-up')) {
+          animateCountUp();
+        }
+        observer1.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  document.querySelectorAll('[class*="animate-"]').forEach(el => {
+    observer1.observe(el);
+  });
+
+    </script>
+</body>
+</html>
